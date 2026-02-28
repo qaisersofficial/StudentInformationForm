@@ -16,5 +16,15 @@ namespace StudentInformationForm
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string data = "Name: " + textBox1.Text +
+                  " | Roll No: " + textBox2.Text +
+                  " | Dept: " + textBox3.Text +
+                  " | Semester: " + comboBox1.Text;
+
+            listBox1.Items.Add(data);
+        }
     }
 }
